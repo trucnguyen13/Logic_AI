@@ -1,0 +1,108 @@
+1 Ai là người quản lý  thư viện.
+?-  manage(X).
+X = nguyenphuocquang.
+2 Tất cả các tác giả trong thư viện.
+auther(X).
+X = nguyenvanA ;
+X = nguyenvanB ;
+X = nguyenvanC ;
+X = nguyenvanD ;
+X = nguyenvanF ;
+X = nguyenvanG ;
+X = nguyenvanH ;
+X = nguyenvanL.
+3 levanL có phải là tác giả không ?
+?- author(lenvanL).
+false.
+4 Tất cả cuốn sách trong lĩnh vực self_development_book.
+?- manage_book(self_development_book,X).
+X = book_sdb_a ;
+X = book_sdb_b ;
+X = book_sdb_c ;
+X = book_sdb_d.
+5 Sách của tác giả nguyenvanA là những cuốn sách nào ?
+?- book(nguyenvanA,X).
+X = book_sdb_a ;
+X = book_sdb_c ;
+X = book_sdb_b ;
+X = book_hb_a.
+6 Thông tin tất cả các người mượn sách trong thư viện ?
+?- borrower(X).
+X = lethiA ;
+X = lethiB ;
+X = lethiC ;
+X = lethiD ;
+X = lethiF ;
+X = lethiK ;
+X = lethiQ ;
+X = lethiM ;
+X = lethiB.
+7 Tất cả cuốn sách ở  location_a là những cuốn sách nào ?
+?- location_book(location_a,X).
+X = book_sdb_a ;
+X = book_sdb_b ;
+X = book_sdb_c ;
+X = book_sdb_d.
+8 nguyenvanD có viết sách về lĩnh vực history_book không ?
+?- find_author(history_book,nguyenvanD).
+false.
+9 Tất cả tác giả viết về thể loại self_development_book ?
+?- find_author(self_development_book,X).
+X = book_sdb_a ;
+X = book_sdb_c ;
+X = book_sdb_b ;
+X = book_hb_a ;
+X = book_sdb_d
+10 Những lĩnh vực của tác giả nguyenvanA tham gia viết ?
+ ?- checking(nguyenvanA,X,R).
+X = self_development_book,
+R = history_book 
+11 Chi tiết tên sách , số lượng từng cuốn sách về lĩnh vực history_book ?
+?- numberbook(history_book,Y,N).
+Y = book_hb_a,
+N = 10 ;
+Y = book_hb_b,
+N = 10 ;
+Y = book_hb_c,
+N = 10.
+12 levanB có thích đọc sách về history_book hay không ?
+?- lovefield(levanB,history_book).
+false.
+13 lethiA sẽ mượn những cuốn sách về những lĩnh vực nào ?
+?- lovefield(lethiA,X).
+X = self_development_book ;
+X = geography_book.
+14 cuốn sách book_gb_b thuộc thể loại nào ?
+?- find_field(book_gb_b ,Y).
+Y = geography_book.
+15 Cuốn sách book_sb_a được lưu trữ ở đâu ?
+?- location_book(X,book_sb_a).
+X = location_d ;
+X = location_d ;
+X = location_d.
+16 Sách của tác giả nguyenvanB để ở khu vực nào ?
+?- find_location(nguyenvanB,X).
+X = location_a ;
+17 Thông tin người mượn cuốn sách  book_hb_b ?
+?- borrower_book(X,book_hb_b).
+X = lethiC ;
+X = lethiD.
+18 Thông tin tất cả những người mượn sách ?
+?-  borrower(X).
+X = lethiA ;
+X = lethiB ;
+X = lethiC ;
+X = lethiD ;
+X = lethiF ;
+X = lethiK ;
+X = lethiQ ;
+X = lethiM
+19 nguyenphuocquang có phải là tác giả không?
+?- author(nguyenphuocquang).
+false.
+20 tất cả cuốn sách về science_book ?
+?- manage_book(science_book,X).
+X = book_sb_a ;
+X = book_sb_b ;
+X = book_sb_c.
+

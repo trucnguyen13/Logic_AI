@@ -1,0 +1,72 @@
+1.Ai là mẹ của Prince Andrew.
+?-  mother(X,pAndrew).
+X = qElizabethII .
+2.Nữ hoàng Elizabeth có phải là vợ của Mia Grace Tindall không ?.
+?- wife(qElizabethII,mgTindall).
+false.
+3.Con của Peter Philips là ai?
+?- child(X,peterPhillips).
+X = sPhillips ;
+X = iPhillips.
+5.Ai là cha của Prince Will?
+?- father(X,pWilliam).
+    X = pCharles.
+6.Cháu của Queen Elizabeth II là ai?
+?-  grandchild(X,qElizabethII).
+X = pWilliam ;
+X = pHarry ;
+X = peterPhillips ;
+X = zPhillips ;
+X = pBeatrice ;
+X = pEugenie ;
+X = jvSevern ;
+X = llmWindsor ;
+7.Sarah Ferguson có còn là vợ của Prince Andrew không?
+?- married(pAndrew,sFerguson).
+false.
+8.Ai là anh em của pWilliam?
+?- sibling(X,pWilliam).
+X = pWilliam ;
+X = pHarry ;
+9.Ai là cháu gái của Princess Diana?
+?- granddaughter(X,pDiana).
+X = pCharlotte ;
+10 Ai là cha mẹ của Mia Grace Tindall?
+    ?- parent(X,mgTindall).
+    X = zPhillips ;
+    X = mTindall.
+11 Ai là cha mẹ của Peter Phillips?
+    ?- parent(X,peterPhillips).
+    X = cmPhillips ;
+    X = pAnne.
+12 Autumn Kelly có phải là vợ của Mike Tindall không?
+    ?- wife(aKelly,mTindall).
+    false
+13 Princess Beatrice có phải là con của Prince Phillip không?
+    ?- child(pBeatrice,pPhillip).
+    false
+14 Ai là cháu gái của Princess Anne?
+    ?- granddaughter(X,pAnne).
+    X = sPhillips ;
+    X = iPhillips ;   
+15 Ai là cháu trai của Princess Diana?
+    ?- grandson(X,pDiana).
+    X = pGeorge ;
+16 Ai là chồng của Pricess Diana?
+    ?- husband(X,pDiana).
+    false.
+17 Ai là cha của Prince William?
+    ?- father(X,pWilliam).
+    X = pCharles.
+18 Ai là cô/dì của Price Harry?
+    ?- aunt(X,pHarry).
+    X = pAnne ;
+    false.
+19 Mia Grace Tindall có phải là con của Mike Tidall không?
+    ?- child(mgTindall,mTindall).
+    true. 
+20 Ai là con của Kate Middleton?
+    ?- child(X,kMiddleton).
+    X = pGeorge ;
+    X = pCharlotte  
+    
